@@ -1,0 +1,204 @@
+.main {
+    background-image: url('https://demos.wrappixel.com/free-admin-templates/angular/blog-angular-free/main/assets/images/landingpage/banner-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_1 {
+    background-image: url('https://demos.wrappixel.com/free-admin-templates/angular/blog-angular-free/main/assets/images/landingpage/banner-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+    height: 350px;
+    line-height: 20px;
+    background-color: #ff6a5b;
+    opacity: 0.8;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+form h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: none;
+    text-align: center;
+}
+
+form input {
+    width: 380px;
+    height: 25px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+form button {
+    width: 380px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+form button:hover {
+    background-color: rgb(244, 250, 255);
+    color: red;
+}
+
+//new componeta
+.main_2 {
+    width: 100%;
+    height: 160vh;
+}
+
+.mains {
+    background-image: url('https://demos.wrappixel.com/free-admin-templates/angular/blog-angular-free/main/assets/images/landingpage/banner-bg.jpg');
+    min-height: 600px;
+
+    overflow: auto;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.images {
+    text-align: start;
+    margin-right: 200px;
+    width: 400px;
+}
+
+.mains nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+
+.mains nav ul {
+    display: flex;
+
+}
+
+.mains nav ul .home {
+    list-style: none;
+    color: #fff;
+    font-size: 0.95rem;
+    margin: 3px;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+nav ul .about {
+    color: hsla(0, 0%, 100%, .5);
+    font-size: 0.95rem;
+    margin: 3px;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 26px;
+}
+
+.mains nav button {
+    width: 130px;
+    height: 40px;
+    margin: 10px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #ff4d7e 0, #ff6a5b);
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.mains nav button:hover {
+    background: linear-gradient(90deg, #ff6a5b 0, #ff4d7e);
+}
+
+.responsivelayout {
+    background-color: #316ce8;
+    ;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    display: none;
+    z-index: 122;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media only screen and (max-width:817px) {
+    .responsivelayout {
+        display: flex;
+    }
+
+    .responsivelayout img {
+        width: auto;
+        height: auto;
+        vertical-align: middle;
+        overflow: clip;
+    }
+
+    .responsivelayout mat-icon {
+        text-align: end;
+        margin-left: 10px;
+    }
+
+    .mains nav {
+        display: none;
+    }
+}
+
+.page_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.titles h1 {
+    color: #fff;
+    font-size: 4.2rem;
+    font-weight: 500;
+
+    min-width: 40px;
+    line-height: 80px;
+    max-width:900px;
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles h3 {
+    font-family: sans-serif;
+    color: hsla(0, 0%, 100%, .5);
+    font-size: 1.2rem;
+    max-width: 850px;
+    margin-top: 50px;
+
+
+}
+
+.buttons_page button {
+    width: 220px;
+    height: 40px;
+    margin: 10px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #ff4d7e 0, #ff6a5b);
+    margin-top: 4px;
+    cursor: pointer;
+    margin-left: -20px;
+    margin-top: 20px;
+    padding: 8px;
+}
