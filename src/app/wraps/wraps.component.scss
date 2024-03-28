@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald:wght@600&family=Paytone+One&family=Teko:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald:wght@600&family=Paytone+One&family=Source+Code+Pro:wght@300&family=Teko:wght@300;600&display=swap');
+
+:root {
+    --text-title-family: 'Anton', sans-serif;
+    --text-title-family2: "Link Sans", "Arial Black", Arial, sans-serif;
+    --text-title-family-size: 1.2rem;
+    --text-title-family-size-min: 0.98rem;
+    --text-title-family-size-max: 3.5rem;
+    --text-title-familiy-size-average: 1.8rem;
+    --text-color: rgb(44, 50, 65);
+    --text-color2: rgb(103, 107, 95);
+    --content-bgcolor: #F8F3F2;
+    --bgcolor: rgb(255, 255, 255);
+    --bgcolors: rgb(239, 240, 236);
+    --text-colors: rgb(168, 170, 162);
+    --text-colors3: rgb(27, 29, 26);
+    --hover-color: rgb(29, 32, 30);
+    --font-family5: 'Josefin Sans', sans-serif;
+    --font-family6: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
 .main {
     background-image: url('https://demos.wrappixel.com/free-admin-templates/angular/blog-angular-free/main/assets/images/landingpage/banner-bg.jpg');
     background-size: cover;
@@ -22,7 +47,8 @@ form {
     width: 400px;
     height: 350px;
     line-height: 20px;
-    background-color: #ff6a5b;
+    // background-color: #ff6a5b;
+    background: linear-gradient(90deg, #ff4d7e 0, #ff6a5b);
     opacity: 0.8;
     border-radius: 10px;
     text-align: center;
@@ -61,7 +87,7 @@ form button:hover {
 //new componeta
 .main_2 {
     width: 100%;
-    height: 160vh;
+    height: 230vh;
 }
 
 .mains {
@@ -173,7 +199,7 @@ nav ul .about {
 
     min-width: 40px;
     line-height: 80px;
-    max-width:900px;
+    max-width: 900px;
 }
 
 .titles {
@@ -201,4 +227,201 @@ nav ul .about {
     margin-left: -20px;
     margin-top: 20px;
     padding: 8px;
+}
+
+section {
+    margin-top: 120px;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.section_title {
+    display: flex;
+    justify-content: center;
+}
+
+.pages_titles {
+    text-align: center;
+}
+
+.pages_titles h2 {
+    font-size: 2.2rem;
+    color: rgb(44, 50, 65);
+}
+
+.pages_titles p {
+    color: #8d97ad;
+    line-height: 24px;
+    max-width: 500px;
+    font-family: var(--text-title-family-size-min);
+    font-size: 0.94rem;
+}
+
+.flexs_boxx {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.box-1 h2 {
+    font-size: 2.2rem;
+    color: rgb(44, 50, 65);
+    text-align: start;
+}
+
+.box-1 p {
+    color: #8d97ad;
+    line-height: 24px;
+    max-width: 350px;
+    font-family: var(--text-title-family-size-min);
+    font-size: 0.74rem;
+}
+
+.page_tops {
+    display: flex;
+}
+
+.pipe {
+    display: block;
+}
+
+.pipe h5 {
+    font-size: 1rem;
+    color: rgb(44, 50, 65);
+}
+
+.pipe p {
+    font-size: 0.72rem;
+    color: rgb(103, 107, 95);
+    font-family: var(--text-title-family-size-min)
+}
+
+.pipe_title {
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.pipe_title h3 {
+    font-size: 1.3rem;
+    max-width: 360px;
+    color: #3e4555;
+    font-family: Montserrat, sans-serif;
+}
+
+.show {
+    margin-left: 5px;
+    margin-top: -10px;
+}
+
+.show a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.show mat-icon {
+    color: dodgerblue;
+    cursor: pointer;
+
+}
+
+.show mat-icon:hover {
+    transition: 0.2s;
+    transform: rotateX(10px);
+}
+
+.page_bottoms {
+    display: flex;
+    justify-content: center;
+}
+
+.pipe_title p {
+    font-size: 0.77rem;
+    text-align: start;
+    max-width: 400px;
+    font-family: var(--text-title-family-size-min);
+    color: #8d97ad;
+}
+
+.boxx-1 {
+    border-bottom: 1px solid #dee2e6 !important;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:982px) {
+    .flexs_boxx {
+        display: block;
+        margin-left: 40px;
+    }
+
+}
+
+@media only screen and (max-width:560px) {
+    .page_tops {
+        display: block;
+    }
+}
+
+footer {
+    margin-top: 20px;
+
+}
+
+.foters_icon {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foters_icon>div mat-icon{
+    font-size: 1.3rem;
+}
+.foters_icon>div {
+    border: 1px solid #fff;
+    border-radius: 100%;
+    background-color: #dee2e6;
+    margin: 6px;
+    text-align: center;
+    padding: 2px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+.foters_icon>div:hover {
+    transition: 0.5s;
+    transform: rotateY(350deg);
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.footer_texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8d97ad;
+
+}
+
+.footer_texts h4 {
+    margin-top: 20px;
+    font-family: var(--text-title-family2);
+    text-align: center;
+}
+
+@media only screen and (max-width:553px){
+    .pipe_title{
+        margin: 0;
+    }
+}
+@media only screen and (max-width:238px){
+    .foters_icon{
+        display: block;
+        text-align: center;
+        margin-left: 20px;
+    }
 }

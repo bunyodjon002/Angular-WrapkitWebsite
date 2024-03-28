@@ -66,4 +66,13 @@ logedins(){
   console.log("loged in");
   
 }
+data = "Feb 19,2020";
+data2 = "Feb 17,2020";
+data3 = "Feb 16,2020";
+data4 = "Feb 14,2020";
+data5 = "Feb 12,2020";
+data6 = "Feb 11,2020"; 
+data7 = "Feb 10,2020";
+data8 = "Feb 8,2020";
+namess='John Doe';
 }
