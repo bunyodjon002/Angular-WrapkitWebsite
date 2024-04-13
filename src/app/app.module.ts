@@ -10,11 +10,18 @@ import { RouterLink, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
+import { DetailComponent } from './detail/detail.component';
+import { Backgroundclass } from './direcitves/background.dirrective';
+import { JsonPipeToObejct } from './pipes/Jspipes';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    WrapsComponent
+    WrapsComponent,
+    DetailComponent,
+    JsonPipeToObejct
+  
   ],
   imports: [
     BrowserModule,

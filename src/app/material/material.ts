@@ -33,14 +33,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { CommonModule } from '@angular/common';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTable } from '@angular/material/table';
-
-
-
 @NgModule({
-
   imports: [
     CommonModule,
-
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -74,11 +69,8 @@ import { MatTable } from '@angular/material/table';
     MatPaginatorModule,
     MatDatepickerModule,
     MatNativeDateModule,
-   
-
   ],
   exports: [
-
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -113,9 +105,7 @@ import { MatTable } from '@angular/material/table';
     MatNativeDateModule,
     MatDatepickerModule,
     MatNativeDateModule,
- MatTable
-
-  ],
+    MatTable],
   providers: [
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' }

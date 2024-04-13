@@ -1,0 +1,25 @@
+.main{
+    width:100%;
+    height: 100vh;
+}
+.section_1{
+    background-image: url('https://demos.wrappixel.com/free-admin-templates/angular/blog-angular-free/main/assets/images/landingpage/banner-bg2.jpg');
+width: 100%;
+height: 40vh;
+background-size: cover; 
+object-fit:contain;
+}
+.responsive_nav{
+    display: none;
+}
+ nav{
+    display: flex;
+    justify-content: center;
+}
+ ul {
+    display: flex;
+}
+.section_1 header nav img{
+    width: 200px;
+    height: 100px; object-fit:contain;
+}

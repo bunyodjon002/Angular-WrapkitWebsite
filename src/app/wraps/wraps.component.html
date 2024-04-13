@@ -1,15 +1,15 @@
 <div class="main" *ngIf="!auth.isLoggedin()">
     <form action="">
-        <h1>Register of WrapKitsAngular!</h1>
-        <label for="">Name</label>
+        <h1>Register</h1>
+
         <input type="text" [(ngModel)]="name" placeholder="Name" name="name" required>
-        <label for="">Surname</label>
+
         <input type="text" [(ngModel)]="surname" placeholder="Surname" name="surname" required>
-        <label for="">Email</label>
+
         <input type="text" [(ngModel)]="email" placeholder="Email" name="email" required>
-        <label for="">Password</label>
+
         <input type="text" [(ngModel)]="password" placeholder="password" name="password" required>
-        <button (click)="onSubmit()" mat-stroked-button color="warn">Submit</button>
+        <button (click)="onSubmit()" mat-stroked-button color="black">Submit</button>
     </form>
 </div>
 <div class="main_1" *ngIf="auth.isLoggedin() && !auth2.isLoggedin1()">
@@ -20,11 +20,11 @@
         <label for="">Password</label>
         <input type="text" [(ngModel)]="passwords" placeholder="password" name="passwords" required>
         <button (click)="onSubmits()" mat-stroked-button color="warn">Submit</button>
-        <button (click)="logout()" mat-stroked-button color="warn">Logout</button>
+        <button (click)="logout()" mat-stroked-button color="black">Logout</button>
     </form>
 </div>
 <!-- -->
-<div class="main_2" *ngIf="auth.isLoggedin() && auth2.isLoggedin1()" >
+<div class="main_2" *ngIf="auth.isLoggedin() && auth2.isLoggedin1()">
     <div class="mains">
         <div class="responsivelayout">
             <img src="https://demos.wrappixel.com/free-admin-templates/angular/blog-angular-free/main/assets/images/logos/white-text.png"
@@ -41,7 +41,7 @@
                 <li class="home">Home</li>
                 <li class="about">About</li>
             </ul>
-            <button (click)="logout()"  mat-raised-button color="warn">Logout</button>
+            <button (click)="logout()" mat-raised-button color="warn">Logout</button>
         </nav>
         <div class="page_title">
             <div class="titles">
@@ -77,7 +77,27 @@
                                 <p> By {{namess}}</p>
                             </div>
                             <div class="pipe_title">
-                                <h3>Magna nostrud incididunt cupidatat cillum incididu..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
+                                <h3>Magna nostrud incididunt cupidatat cillum incididu..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
+                            </div>
+                            <div class="show">
+                                <a routerLink="/detal">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
+
+                            </div>
+                        </div>
+                        <div class="page_bottoms"> </div>
+                    </div>
+                    <div class="boxx-1">
+                        <div class="page_tops">
+                            <div class="pipe">
+                                <h5>{{data}}</h5>
+                                <p> By {{namess}}</p>
+                            </div>
+                            <div class="pipe_title">
+                                <h3>Dolore pariatur amet ullamco aliquip mollit aliqua..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
                             </div>
                             <div class="show">
                                 <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
@@ -92,7 +112,9 @@
                                 <p> By {{namess}}</p>
                             </div>
                             <div class="pipe_title">
-                                <h3>Dolore pariatur amet ullamco aliquip mollit aliqua..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
+                                <h3>Velit esse dolor dolor qui cillum velit in quis ex..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
                             </div>
                             <div class="show">
                                 <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
@@ -107,7 +129,9 @@
                                 <p> By {{namess}}</p>
                             </div>
                             <div class="pipe_title">
-                                <h3>Velit esse dolor dolor qui cillum velit in quis ex..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
+                                <h3>Magna nostrud incididunt cupidatat cillum incididu..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
                             </div>
                             <div class="show">
                                 <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
@@ -122,7 +146,9 @@
                                 <p> By {{namess}}</p>
                             </div>
                             <div class="pipe_title">
-                                <h3>Magna nostrud incididunt cupidatat cillum incididu..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
+                                <h3>Dolore pariatur amet ullamco aliquip mollit aliqua..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
                             </div>
                             <div class="show">
                                 <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
@@ -137,7 +163,9 @@
                                 <p> By {{namess}}</p>
                             </div>
                             <div class="pipe_title">
-                                <h3>Dolore pariatur amet ullamco aliquip mollit aliqua..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
+                                <h3>Velit esse dolor dolor qui cillum velit in quis ex..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
                             </div>
                             <div class="show">
                                 <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
@@ -152,7 +180,9 @@
                                 <p> By {{namess}}</p>
                             </div>
                             <div class="pipe_title">
-                                <h3>Velit esse dolor dolor qui cillum velit in quis ex..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
+                                <h3>Dolore pariatur amet ullamco aliquip mollit aliqua..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
                             </div>
                             <div class="show">
                                 <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
@@ -167,22 +197,9 @@
                                 <p> By {{namess}}</p>
                             </div>
                             <div class="pipe_title">
-                                <h3>Dolore pariatur amet ullamco aliquip mollit aliqua..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
-                            </div>
-                            <div class="show">
-                                <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
-                            </div>
-                        </div>
-                        <div class="page_bottoms"> </div>
-                    </div>
-                    <div class="boxx-1">
-                        <div class="page_tops">
-                            <div class="pipe">
-                                <h5>{{data}}</h5>
-                                <p> By {{namess}}</p>
-                            </div>
-                            <div class="pipe_title">
-                                <h3>Velit esse dolor dolor qui cillum velit in quis ex..</h3><p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci necessitatibus cumque.</p>
+                                <h3>Velit esse dolor dolor qui cillum velit in quis ex..</h3>
+                                <p>Labore irure irure laborum quis tempor aliqua. Dude quas optio ut adipisci
+                                    necessitatibus cumque.</p>
                             </div>
                             <div class="show">
                                 <a href="">Show Detail </a> <mat-icon>arrow_forward</mat-icon>
@@ -194,16 +211,16 @@
             </div>
         </div>
     </section>
-  
+
     <footer>
         <div class="foters_icon">
             <div> <mat-icon>facebook</mat-icon></div>
-           <div> <mat-icon>mail</mat-icon></div>
-           <div><mat-icon>call</mat-icon></div>
-       <div><mat-icon>g_translate</mat-icon></div>
-        <div>  <mat-icon>share</mat-icon></div>
-        
-      
+            <div> <mat-icon>mail</mat-icon></div>
+            <div><mat-icon>call</mat-icon></div>
+            <div><mat-icon>g_translate</mat-icon></div>
+            <div> <mat-icon>share</mat-icon></div>
+
+
         </div>
         <div class="footer_texts">
             <h4>All Rights Reserved by WrapPixel.</h4>

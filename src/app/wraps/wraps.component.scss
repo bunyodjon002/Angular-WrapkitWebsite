@@ -48,7 +48,7 @@ form {
     height: 350px;
     line-height: 20px;
     // background-color: #ff6a5b;
-    background: linear-gradient(90deg, #ff4d7e 0, #ff6a5b);
+  background-color: black;
     opacity: 0.8;
     border-radius: 10px;
     text-align: center;
@@ -66,9 +66,14 @@ form h1 {
 form input {
     width: 380px;
     height: 25px;
-    border-radius: 50px;
-    outline: none;
-    border: 1px solid transparent;
+   outline: none;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(103, 107, 95);
+    color:#fff ;
+    margin-top: 12px;
 }
 
 form button {
@@ -76,7 +81,8 @@ form button {
     text-align: center;
     border-radius: 20px;
     margin-top: 20px;
-    color: #fff;
+   color: black;
+    background-color: #fff;
 }
 
 form button:hover {
